@@ -45,7 +45,7 @@ The analysis needs to answer the following sets of questions:
 If certain offers are successful, they should be included in Step 2:
 
 **Stage 2: Targeting**
-* Q2.1: Based on demographic information, which customer is how likely to react to a certain offer?
+* Q2: Based on demographic information, which customer is how likely to react to a certain offer?
 
 ## Notebooks:
 There are two notebooks which have to be run in the order Starbucks-Wrangling and then Starbucks-Analysis.
@@ -100,6 +100,8 @@ Further improvements could be made during the modelling stage with an even large
 
 ## References:
 References for sources used are at the beginning of each notebook.
+
+
 References for libraries used:
 **numpy**
 Harris, C.R., Millman, K.J., van der Walt, S.J. et al. "Array programming with NumPy", Nature 585, 357–362 (2020). DOI: 0.1038/s41586-020-2649-2.
