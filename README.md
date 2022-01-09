@@ -5,7 +5,6 @@ This is the final project for the Udacity Data Science Nanodegree.
 
 ## Libraries needed:
 * pandas
-* os
 * numpy
 * seaborn
 * math
@@ -89,8 +88,14 @@ Various assumptions need to be made prior to analysing the data:
 *Assumption 2: The people who received the offer were sampled randomly - They are not, for instance, people who already spend a lot where the offer could be considered a reward. This assumption is reasonable because this is an experiment.*
 
 The business questions of Step 1 are answered through descriptive statistics and a Kruskal-Wallis test with Mann-Whitney U tests as post-hoc tests.
-For Step 2, a predictive classifier model is built that predicts if a customer will use an offer or not.
-The notebook Starbucks-Analysis contains insights from the results of the various analyses.
+For Step 2, a predictive classifier model is built that predicts if a customer will use an offer or not. The models chosen should work well with low-dimensional data, as they do not have a specific focus on penalizing for too many features like e.g. ridge regression.
+
+## Findings:
+The notebook Starbucks-Analysis contains insights from the results of the various analyses. The two most successful offers were identified. Overall, discounts are more successful than BOGO offers which are more successful than informational offers. The predictive model achieved an accuracy of .72; the recall and precision for the group "offer completed" were higher than those for the group "not completed" at .78 and .77 respectively. As Starbucks's main interest is likely with these responsive customers, the results are satisfying, albeit not outstanding.
+
+## Improvements:
+Improvements could be made during the data wrangling stage. Certain assumptions had to flow into the pre-processing in the absence of clear information. With clear information from Starbucks, this could be improved. One example is details on the order of events (receive, view, complete) as is discussed in section 3.1.2 of the Starbucks-Wrangling notebook.
+Further improvements could be made during the modelling stage with an even larger set of parameters to be tested, or different types of models. It could also be beneficial to add more explanatory variables. These would need to be derived variables as there is no additional demographic data available.
 
 ## References:
 References for sources used are at the beginning of each notebook.
@@ -108,9 +113,6 @@ J. D. Hunter, "Matplotlib: A 2D Graphics Environment", Computing in Science & En
 
 **scipy**
 Pauli Virtanen, Ralf Gommers, Travis E. Oliphant, Matt Haberland, Tyler Reddy, David Cournapeau, Evgeni Burovski, Pearu Peterson, Warren Weckesser, Jonathan Bright, Stéfan J. van der Walt, Matthew Brett, Joshua Wilson, K. Jarrod Millman, Nikolay Mayorov, Andrew R. J. Nelson, Eric Jones, Robert Kern, Eric Larson, CJ Carey, İlhan Polat, Yu Feng, Eric W. Moore, Jake VanderPlas, Denis Laxalde, Josef Perktold, Robert Cimrman, Ian Henriksen, E.A. Quintero, Charles R Harris, Anne M. Archibald, Antônio H. Ribeiro, Fabian Pedregosa, Paul van Mulbregt, and SciPy 1.0 Contributors. (2020) SciPy 1.0: Fundamental Algorithms for Scientific Computing in Python. Nature Methods, 17(3), 261-272.
-
-**os**
-Official documentation: https://docs.python.org/3/library/os.html
 
 **seaborn**
 Michael L. Waskom, "Seaborn: statistical data visualization", Journal of Open Source Software, volume 6(60), p. 3021, 2021.
