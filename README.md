@@ -1,6 +1,7 @@
 # README
 
-## Background: This is the final project for the Udacity Data Science Nanodegree.
+## Background:
+This is the final project for the Udacity Data Science Nanodegree.
 
 ## Libraries needed:
 * pandas
@@ -56,7 +57,9 @@ Three datasets are provided with this repo:
 * profile, which provides information on the customers (e.g. demographics)
 * transcript, which provides information on events (transact, receive offer, view offer, complete offer)
 All three datasets need to be combined to answer the key questions.
+
 Two more datasets are created when the Starbucks-Wrangling notebook is run.
+
 The datasets were provided through the Udacity course and come from Starbucks.
 
 ## Blog entry: A blog entry which discusses the most important findings can be found here:  
@@ -80,6 +83,7 @@ A graphic representation of the different data pre-processing steps. It matches 
 
 ## Analysis:
 Various assumptions need to be made prior to analysing the data:
+
 *Assumption 1: Not viewing an offer is not a conscious decision and hence not an active rejection of the offer. It represents simply missing the fact that the offer was made altogether. From the perspective of the customer, it is hence not different from "not receiving the offer" . Consequently, for each offer, the population can be divided into two groups. Firstly, those people who viewed the offer. They will be called "offer-aware". In this group, some people will have used the offer and some will consciously not have used it. The other group of non-receivers and non-viewers will be called offer-unaware group.*
 
 *Assumption 2: The people who received the offer were sampled randomly - They are not, for instance, people who already spend a lot where the offer could be considered a reward. This assumption is reasonable because this is an experiment.*
@@ -112,7 +116,7 @@ Official documentation: https://docs.python.org/3/library/os.html
 Michael L. Waskom, "Seaborn: statistical data visualization", Journal of Open Source Software, volume 6(60), p. 3021, 2021.
 
 **math/itertools**
-1. Van Rossum G. The Python Library Reference, release 3.8.2. Python Software Foundation; 2020.
+Van Rossum G. The Python Library Reference, release 3.8.2. Python Software Foundation; 2020.
 
 **json**
 Official documentation: https://docs.python.org/3/library/json.html
